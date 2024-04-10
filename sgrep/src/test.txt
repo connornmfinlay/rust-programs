@@ -1,8 +1,18 @@
 fuzz
-foo
-bar
 fuzz foo
 fuzz foo bar
+fuzz foo
+fuzz
+foo
+foo fuzz
+foo fuzz bar
+foo fuzz
+foo
+bar
+bar foo
+bar foo fuzz
+bar foo
+bar
 
 I am testing out my new monitor, through my dock, with my personal macbook.
 I am very much enjoying the experience
