@@ -10,6 +10,9 @@ Inspired by working as a sysadmin and not enjoying having to spam out both du an
 ### simple grep
 Following a rust tutorial
 
+## rust-tcp
+Simple single thread rust tcp server
+
 # Future Ideas
 ## sdu
 ### simple disk usage
