@@ -1,4 +1,6 @@
 use rand::Rng;
+use clipboard::ClipboardContext;
+use clipboard::ClipboardProvider;
 
 fn main() {
     let mut rng = rand::thread_rng();
@@ -15,7 +17,11 @@ fn main() {
             }
         })
         .collect();
-    
-    println!("Generated password: {}", password);
-}
 
+    // Copy the generated password to the clipboard
+    let mut ctx: ClipboardContext = ClipboardProvider::new().unwrap();
+    ctx.set_contents(password.clone()).unwrap();
+
+    println!("Generated password: {}", password);
+    println!("Password has been copied to the clipboard.");
+}
