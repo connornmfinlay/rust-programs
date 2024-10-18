@@ -4,10 +4,9 @@ use clipboard::ClipboardProvider;
 
 fn main() {
     let mut rng = rand::thread_rng();
-    let symbols = b"!@#$%^&*()-_=+[]{}<>?/\\|";  // Define your symbol set as a byte array
+    let symbols = b"!@#$%^*()-_=+[]{}<>?/";  // Define your symbol set as a byte array
 
-    // Generate a password of 12 random characters (alphanumeric + symbols)
-    let password: String = (0..12)
+    let password: String = (0..8)
         .map(|_| {
             let choice = rng.gen_range(0..3);  // Randomly choose between 0 (alphanumeric) and 1 (symbols)
             match choice {
