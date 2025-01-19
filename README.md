@@ -17,3 +17,7 @@ Simple single thread rust tcp server
 ## sdu
 ### simple disk usage
 Learn how ddu works
+
+Test rust web server and client
+
+resteraunt app backend
