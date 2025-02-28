@@ -33,4 +33,4 @@
 ./test-client/target/debug/examples/
 ./test-client/target/debug/incremental/
 
-
+./pass-gen/target/.rustc_info.json

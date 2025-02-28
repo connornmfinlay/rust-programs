@@ -5,9 +5,9 @@ use clipboard::ClipboardProvider;
 
 fn main() {
     let mut rng = rand::thread_rng();
-    let symbols = b"!@#$%^&*()-_=+[]{}<>?/\\|";
+    let symbols = b"!^()-_=+[]{}<>?";
     let numbers = b"0123456789";
-    let alphanumeric = b"ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz";
+    let alphanumeric = b"ABCDEFGHJKLMNOPQRSTUVWXYZabcdefghjkmnopqrstuvwxyz";
 
     // Generate 3 random numbers
     let num_part: String = (0..3)
